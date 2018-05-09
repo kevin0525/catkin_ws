@@ -1,0 +1,2 @@
+kcf:readCam:readvideo
+-DCATKIN_DEVEL_PREFIX=/home/kevin/workspace/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kevin/workspace/catkin_ws/install -G Unix Makefiles

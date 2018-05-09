@@ -1,0 +1,12 @@
+
+a.mp4
+      groundtruth_rect[0].x = 775;
+      groundtruth_rect[0].y = 785;
+      groundtruth_rect[0].width = 220;
+      groundtruth_rect[0].height = 190;
+b.avi
+      groundtruth_rect[0].x = 179;
+      groundtruth_rect[0].y = 315;
+      groundtruth_rect[0].width = 110;
+      groundtruth_rect[0].height = 92;
+

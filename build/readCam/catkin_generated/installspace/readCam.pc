@@ -1,0 +1,8 @@
+prefix=/home/kevin/workspace/catkin_ws/install
+
+Name: readCam
+Description: Description of readCam
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kevin/workspace/catkin_ws/install/lib 
+Requires: 

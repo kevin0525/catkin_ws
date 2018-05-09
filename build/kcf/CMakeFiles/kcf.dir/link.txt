@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/kcf.dir/src/main.cpp.o  -o /home/kevin/workspace/catkin_ws/devel/lib/kcf/kcf -rdynamic 
