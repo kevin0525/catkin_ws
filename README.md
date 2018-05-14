@@ -7,3 +7,5 @@ kcf
 readVideo  read and write video
 
 readCam read Camera
+
+detect_hog  detect deck for icra
