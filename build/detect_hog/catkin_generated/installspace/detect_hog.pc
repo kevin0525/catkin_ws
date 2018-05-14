@@ -1,0 +1,8 @@
+prefix=/home/kevin/workspace/catkin_ws/install
+
+Name: detect_hog
+Description: Description of detect_hog
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kevin/workspace/catkin_ws/install/lib 
+Requires: 

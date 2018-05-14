@@ -292,21 +292,8 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f kcf/CMakeFiles/std_msgs_generate_messages_py.dir/build.make kcf/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/std_msgs_generate_messages_py.dir/build.make detect_hog/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
-
-# Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f kcf/CMakeFiles/roscpp_generate_messages_py.dir/build.make kcf/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
@@ -318,7 +305,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f kcf/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make kcf/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make detect_hog/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -331,8 +318,34 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f kcf/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make kcf/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make detect_hog/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f detect_hog/CMakeFiles/roscpp_generate_messages_py.dir/build.make detect_hog/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named detect_hog_node
+
+# Build rule for target.
+detect_hog_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detect_hog_node
+.PHONY : detect_hog_node
+
+# fast build rule for target.
+detect_hog_node/fast:
+	$(MAKE) -f detect_hog/CMakeFiles/detect_hog_node.dir/build.make detect_hog/CMakeFiles/detect_hog_node.dir/build
+.PHONY : detect_hog_node/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
@@ -344,7 +357,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f kcf/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make kcf/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make detect_hog/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -357,7 +370,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f kcf/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make kcf/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make detect_hog/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -370,7 +383,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f kcf/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make kcf/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make detect_hog/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -383,7 +396,7 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) -f kcf/CMakeFiles/roscpp_generate_messages_eus.dir/build.make kcf/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/roscpp_generate_messages_eus.dir/build.make detect_hog/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
@@ -396,7 +409,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f kcf/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make kcf/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make detect_hog/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -409,21 +422,8 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f kcf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make kcf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make detect_hog/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named kcf_listener_node
-
-# Build rule for target.
-kcf_listener_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 kcf_listener_node
-.PHONY : kcf_listener_node
-
-# fast build rule for target.
-kcf_listener_node/fast:
-	$(MAKE) -f kcf/CMakeFiles/kcf_listener_node.dir/build.make kcf/CMakeFiles/kcf_listener_node.dir/build
-.PHONY : kcf_listener_node/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
@@ -435,7 +435,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f kcf/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make kcf/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make detect_hog/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -448,7 +448,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f kcf/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make kcf/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make detect_hog/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -461,7 +461,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f kcf/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make kcf/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make detect_hog/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -474,7 +474,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f kcf/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make kcf/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make detect_hog/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -487,7 +487,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f kcf/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make kcf/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f detect_hog/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make detect_hog/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -502,6 +502,19 @@ kcf_node: cmake_check_build_system
 kcf_node/fast:
 	$(MAKE) -f kcf/CMakeFiles/kcf_node.dir/build.make kcf/CMakeFiles/kcf_node.dir/build
 .PHONY : kcf_node/fast
+
+#=============================================================================
+# Target rules for targets named kcf_listener_node
+
+# Build rule for target.
+kcf_listener_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kcf_listener_node
+.PHONY : kcf_listener_node
+
+# fast build rule for target.
+kcf_listener_node/fast:
+	$(MAKE) -f kcf/CMakeFiles/kcf_listener_node.dir/build.make kcf/CMakeFiles/kcf_listener_node.dir/build
+.PHONY : kcf_listener_node/fast
 
 #=============================================================================
 # Target rules for targets named readCam_node
@@ -529,6 +542,32 @@ readvideo_node/fast:
 	$(MAKE) -f readvideo/CMakeFiles/readvideo_node.dir/build.make readvideo/CMakeFiles/readvideo_node.dir/build
 .PHONY : readvideo_node/fast
 
+#=============================================================================
+# Target rules for targets named talker_node
+
+# Build rule for target.
+talker_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 talker_node
+.PHONY : talker_node
+
+# fast build rule for target.
+talker_node/fast:
+	$(MAKE) -f talker/CMakeFiles/talker_node.dir/build.make talker/CMakeFiles/talker_node.dir/build
+.PHONY : talker_node/fast
+
+#=============================================================================
+# Target rules for targets named talker_listener_node
+
+# Build rule for target.
+talker_listener_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 talker_listener_node
+.PHONY : talker_listener_node
+
+# fast build rule for target.
+talker_listener_node/fast:
+	$(MAKE) -f talker/CMakeFiles/talker_listener_node.dir/build.make talker/CMakeFiles/talker_listener_node.dir/build
+.PHONY : talker_listener_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -552,24 +591,27 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... detect_hog_node"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... kcf_listener_node"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... kcf_node"
+	@echo "... kcf_listener_node"
 	@echo "... readCam_node"
 	@echo "... readvideo_node"
+	@echo "... talker_node"
+	@echo "... talker_listener_node"
 .PHONY : help
 
 

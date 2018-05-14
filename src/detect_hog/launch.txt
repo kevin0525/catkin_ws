@@ -1,0 +1,1 @@
+video/out.avi result/out1.avi dataset_deck/HOG_SVM.txt partImg/ 1 0 0 f

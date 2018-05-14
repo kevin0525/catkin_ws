@@ -78,17 +78,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -110,6 +99,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -166,154 +166,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-kcf/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : kcf/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+kcf/CMakeFiles/kcf_node.dir/rule:
+	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/kcf_node.dir/rule
+.PHONY : kcf/CMakeFiles/kcf_node.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: kcf/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+kcf_node: kcf/CMakeFiles/kcf_node.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
+.PHONY : kcf_node
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/std_msgs_generate_messages_py.dir/build.make kcf/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : kcf/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: kcf/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/roscpp_generate_messages_py.dir/build.make kcf/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : kcf/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: kcf/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make kcf/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : kcf/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: kcf/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make kcf/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : kcf/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: kcf/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make kcf/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : kcf/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: kcf/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make kcf/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : kcf/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: kcf/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make kcf/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : kcf/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: kcf/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/roscpp_generate_messages_eus.dir/build.make kcf/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : kcf/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: kcf/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make kcf/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : kcf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: kcf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make kcf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+kcf_node/fast:
+	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/kcf_node.dir/build.make kcf/CMakeFiles/kcf_node.dir/build
+.PHONY : kcf_node/fast
 
 # Convenience name for target.
 kcf/CMakeFiles/kcf_listener_node.dir/rule:
@@ -329,96 +194,6 @@ kcf_listener_node: kcf/CMakeFiles/kcf_listener_node.dir/rule
 kcf_listener_node/fast:
 	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/kcf_listener_node.dir/build.make kcf/CMakeFiles/kcf_listener_node.dir/build
 .PHONY : kcf_listener_node/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : kcf/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: kcf/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make kcf/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : kcf/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: kcf/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make kcf/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : kcf/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: kcf/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make kcf/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : kcf/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: kcf/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make kcf/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : kcf/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: kcf/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make kcf/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-kcf/CMakeFiles/kcf_node.dir/rule:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kcf/CMakeFiles/kcf_node.dir/rule
-.PHONY : kcf/CMakeFiles/kcf_node.dir/rule
-
-# Convenience name for target.
-kcf_node: kcf/CMakeFiles/kcf_node.dir/rule
-
-.PHONY : kcf_node
-
-# fast build rule for target.
-kcf_node/fast:
-	cd /home/kevin/workspace/catkin_ws/build && $(MAKE) -f kcf/CMakeFiles/kcf_node.dir/build.make kcf/CMakeFiles/kcf_node.dir/build
-.PHONY : kcf_node/fast
 
 src/gradientMex.o: src/gradientMex.cpp.o
 
@@ -536,26 +311,11 @@ help:
 	@echo "... depend"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... edit_cache"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... kcf_listener_node"
-	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... test"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... kcf_node"
+	@echo "... edit_cache"
+	@echo "... kcf_listener_node"
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... src/gradientMex.o"
