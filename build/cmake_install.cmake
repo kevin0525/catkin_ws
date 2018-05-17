@@ -120,6 +120,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/kevin/workspace/catkin_ws/build/detect_hog/cmake_install.cmake")
   include("/home/kevin/workspace/catkin_ws/build/kcf/cmake_install.cmake")
   include("/home/kevin/workspace/catkin_ws/build/readCam/cmake_install.cmake")
+  include("/home/kevin/workspace/catkin_ws/build/readMutipleCam/cmake_install.cmake")
   include("/home/kevin/workspace/catkin_ws/build/readvideo/cmake_install.cmake")
   include("/home/kevin/workspace/catkin_ws/build/talker/cmake_install.cmake")
 

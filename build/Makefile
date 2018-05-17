@@ -530,6 +530,19 @@ readCam_node/fast:
 .PHONY : readCam_node/fast
 
 #=============================================================================
+# Target rules for targets named readMutipleCam
+
+# Build rule for target.
+readMutipleCam: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 readMutipleCam
+.PHONY : readMutipleCam
+
+# fast build rule for target.
+readMutipleCam/fast:
+	$(MAKE) -f readMutipleCam/CMakeFiles/readMutipleCam.dir/build.make readMutipleCam/CMakeFiles/readMutipleCam.dir/build
+.PHONY : readMutipleCam/fast
+
+#=============================================================================
 # Target rules for targets named readvideo_node
 
 # Build rule for target.
@@ -609,6 +622,7 @@ help:
 	@echo "... kcf_node"
 	@echo "... kcf_listener_node"
 	@echo "... readCam_node"
+	@echo "... readMutipleCam"
 	@echo "... readvideo_node"
 	@echo "... talker_node"
 	@echo "... talker_listener_node"

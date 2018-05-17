@@ -1,2 +1,2 @@
-detect_hog:kcf:readCam:readvideo:talker
+detect_hog:kcf:readCam:readMutipleCam:readvideo:talker
 -DCATKIN_DEVEL_PREFIX=/home/kevin/workspace/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kevin/workspace/catkin_ws/install -G Unix Makefiles

@@ -1086,6 +1086,61 @@ clean: readCam/CMakeFiles/readCam_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory readMutipleCam
+
+# Convenience name for "all" pass in the directory.
+readMutipleCam/all: readMutipleCam/CMakeFiles/readMutipleCam.dir/all
+
+.PHONY : readMutipleCam/all
+
+# Convenience name for "clean" pass in the directory.
+readMutipleCam/clean: readMutipleCam/CMakeFiles/readMutipleCam.dir/clean
+
+.PHONY : readMutipleCam/clean
+
+# Convenience name for "preinstall" pass in the directory.
+readMutipleCam/preinstall:
+
+.PHONY : readMutipleCam/preinstall
+
+#=============================================================================
+# Target rules for target readMutipleCam/CMakeFiles/readMutipleCam.dir
+
+# All Build rule for target.
+readMutipleCam/CMakeFiles/readMutipleCam.dir/all:
+	$(MAKE) -f readMutipleCam/CMakeFiles/readMutipleCam.dir/build.make readMutipleCam/CMakeFiles/readMutipleCam.dir/depend
+	$(MAKE) -f readMutipleCam/CMakeFiles/readMutipleCam.dir/build.make readMutipleCam/CMakeFiles/readMutipleCam.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workspace/catkin_ws/build/CMakeFiles --progress-num=22,23 "Built target readMutipleCam"
+.PHONY : readMutipleCam/CMakeFiles/readMutipleCam.dir/all
+
+# Include target in all.
+all: readMutipleCam/CMakeFiles/readMutipleCam.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+readMutipleCam/CMakeFiles/readMutipleCam.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workspace/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 readMutipleCam/CMakeFiles/readMutipleCam.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workspace/catkin_ws/build/CMakeFiles 0
+.PHONY : readMutipleCam/CMakeFiles/readMutipleCam.dir/rule
+
+# Convenience name for target.
+readMutipleCam: readMutipleCam/CMakeFiles/readMutipleCam.dir/rule
+
+.PHONY : readMutipleCam
+
+# clean rule for target.
+readMutipleCam/CMakeFiles/readMutipleCam.dir/clean:
+	$(MAKE) -f readMutipleCam/CMakeFiles/readMutipleCam.dir/build.make readMutipleCam/CMakeFiles/readMutipleCam.dir/clean
+.PHONY : readMutipleCam/CMakeFiles/readMutipleCam.dir/clean
+
+# clean rule for target.
+clean: readMutipleCam/CMakeFiles/readMutipleCam.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory readvideo
 
 # Convenience name for "all" pass in the directory.
@@ -1110,7 +1165,7 @@ readvideo/preinstall:
 readvideo/CMakeFiles/readvideo_node.dir/all:
 	$(MAKE) -f readvideo/CMakeFiles/readvideo_node.dir/build.make readvideo/CMakeFiles/readvideo_node.dir/depend
 	$(MAKE) -f readvideo/CMakeFiles/readvideo_node.dir/build.make readvideo/CMakeFiles/readvideo_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workspace/catkin_ws/build/CMakeFiles --progress-num=22,23 "Built target readvideo_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workspace/catkin_ws/build/CMakeFiles --progress-num=24,25 "Built target readvideo_node"
 .PHONY : readvideo/CMakeFiles/readvideo_node.dir/all
 
 # Include target in all.
@@ -1167,7 +1222,7 @@ talker/preinstall:
 talker/CMakeFiles/talker_node.dir/all:
 	$(MAKE) -f talker/CMakeFiles/talker_node.dir/build.make talker/CMakeFiles/talker_node.dir/depend
 	$(MAKE) -f talker/CMakeFiles/talker_node.dir/build.make talker/CMakeFiles/talker_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workspace/catkin_ws/build/CMakeFiles --progress-num=26,27 "Built target talker_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workspace/catkin_ws/build/CMakeFiles --progress-num=28,29 "Built target talker_node"
 .PHONY : talker/CMakeFiles/talker_node.dir/all
 
 # Include target in all.
@@ -1204,7 +1259,7 @@ clean: talker/CMakeFiles/talker_node.dir/clean
 talker/CMakeFiles/talker_listener_node.dir/all:
 	$(MAKE) -f talker/CMakeFiles/talker_listener_node.dir/build.make talker/CMakeFiles/talker_listener_node.dir/depend
 	$(MAKE) -f talker/CMakeFiles/talker_listener_node.dir/build.make talker/CMakeFiles/talker_listener_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workspace/catkin_ws/build/CMakeFiles --progress-num=24,25 "Built target talker_listener_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workspace/catkin_ws/build/CMakeFiles --progress-num=26,27 "Built target talker_listener_node"
 .PHONY : talker/CMakeFiles/talker_listener_node.dir/all
 
 # Include target in all.

@@ -1,0 +1,8 @@
+prefix=/home/kevin/workspace/catkin_ws/devel
+
+Name: readMutipleCam
+Description: Description of readMutipleCam
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kevin/workspace/catkin_ws/devel/lib 
+Requires: 

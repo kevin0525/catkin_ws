@@ -68,6 +68,14 @@
 /home/kevin/workspace/catkin_ws/build/readCam/CMakeFiles/install/local.dir
 /home/kevin/workspace/catkin_ws/build/readCam/CMakeFiles/install/strip.dir
 /home/kevin/workspace/catkin_ws/build/readCam/CMakeFiles/test.dir
+/home/kevin/workspace/catkin_ws/build/readMutipleCam/CMakeFiles/list_install_components.dir
+/home/kevin/workspace/catkin_ws/build/readMutipleCam/CMakeFiles/install.dir
+/home/kevin/workspace/catkin_ws/build/readMutipleCam/CMakeFiles/rebuild_cache.dir
+/home/kevin/workspace/catkin_ws/build/readMutipleCam/CMakeFiles/edit_cache.dir
+/home/kevin/workspace/catkin_ws/build/readMutipleCam/CMakeFiles/readMutipleCam.dir
+/home/kevin/workspace/catkin_ws/build/readMutipleCam/CMakeFiles/install/strip.dir
+/home/kevin/workspace/catkin_ws/build/readMutipleCam/CMakeFiles/install/local.dir
+/home/kevin/workspace/catkin_ws/build/readMutipleCam/CMakeFiles/test.dir
 /home/kevin/workspace/catkin_ws/build/readvideo/CMakeFiles/list_install_components.dir
 /home/kevin/workspace/catkin_ws/build/readvideo/CMakeFiles/install.dir
 /home/kevin/workspace/catkin_ws/build/readvideo/CMakeFiles/rebuild_cache.dir
